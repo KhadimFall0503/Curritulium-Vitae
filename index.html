@@ -9,7 +9,12 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#menuNav"
+    data-bs-offset="100"
+    tabindex="0"
+  >
     <div
       class="container my-5 border shadow-lg p-0 d-flex flex-column"
       style="min-height: 85vh"
@@ -19,7 +24,9 @@
       </header>
 
       <div class="row g-0 flex-grow-1">
-        <nav class="col-md-3 bg-light p-3">
+        <nav
+          class="col-md-3 bg-light p-3 d-flex flex-column align-items-center"
+        >
           <button
             class="btn btn-warning d-md-none mb-3"
             type="button"
@@ -31,51 +38,70 @@
             Menu
           </button>
           <div class="collapse d-md-block" id="menuNav">
-            <ul class="nav flex-column">
+            <ul class="nav flex-column mt-4">
               <li class="nav-item">
                 <a
                   href="apropos.html"
                   target="cvframe"
-                  class="nav-link py-1 active"
-                  >A propos</a
+                  class="nav-link py-2 fw-bold text-success text-uppercase btn btn-outline-warning"
                 >
+                  A propos
+                </a>
               </li>
               <li class="nav-item">
-                <a href="etatcivil.html" target="cvframe" class="nav-link py-1"
-                  >Etat civil</a
+                <a
+                  href="etatcivil.html"
+                  target="cvframe"
+                  class="nav-link py-2 fw-bold text-success text-uppercase btn btn-outline-warning"
                 >
+                  Etat civil
+                </a>
               </li>
               <li class="nav-item">
-                <a href="formations.html" target="cvframe" class="nav-link py-1"
-                  >Formations</a
+                <a
+                  href="formations.html"
+                  target="cvframe"
+                  class="nav-link py-2 fw-bold text-success text-uppercase btn btn-outline-warning"
                 >
+                  Formations
+                </a>
               </li>
               <li class="nav-item">
                 <a
                   href="experiences.html"
                   target="cvframe"
-                  class="nav-link py-1"
-                  >Expériences</a
+                  class="nav-link py-2 fw-bold text-success text-uppercase btn btn-outline-warning"
                 >
+                  Expériences
+                </a>
               </li>
               <li class="nav-item">
-                <a href="projets.html" target="cvframe" class="nav-link py-1"
-                  >Projets</a
+                <a
+                  href="projets.html"
+                  target="cvframe"
+                  class="nav-link py-2 fw-bold text-success text-uppercase btn btn-outline-warning"
                 >
+                  Projets
+                </a>
               </li>
-              <li class="nav-item">
-                <a href="contact.html" target="cvframe" class="nav-link py-1"
-                  >Contact</a
+              <li class="nav-item mb-1">
+                <a
+                  href="contact.html"
+                  target="cvframe"
+                  class="nav-link py-2 fw-bold text-success text-uppercase btn btn-outline-warning"
                 >
+                  Contact
+                </a>
               </li>
               <li class="nav-item">
                 <span class="badge bg-dark">
                   <a
                     href="album.html"
                     target="cvframe"
-                    class="nav-link py-1 text-white"
-                    >Album</a
+                    class="nav-link py-2 text-white text-uppercase btn btn-outline-warning"
                   >
+                    Album
+                  </a>
                 </span>
               </li>
             </ul>
